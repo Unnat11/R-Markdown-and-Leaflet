@@ -1,0 +1,21 @@
+---
+title: "Untitled"
+author: "Unnat Palan"
+date: "August 23, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+library(leaflet)
+my_map <- leaflet () %>% 
+    addTiles() %>%
+    addMarkers(lat=19.0760, lng=72.8777, popup="Bombay")
+my_map
+```
+
